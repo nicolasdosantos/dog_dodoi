@@ -303,3 +303,13 @@ main .secoes .secoes-consultascanceladas{
     color: var(--cor-preta);
 }
 
+.botoes a{
+    background-color: #EA1C81;
+    padding: 10px 25px;
+    
+    color: #D8F1FB;
+    border-radius: 30px;
+}
+.botoes div{
+ margin-top: 50px;
+}
