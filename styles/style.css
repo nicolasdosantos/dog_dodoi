@@ -1,3 +1,4 @@
+
 :root{
     --cor-principal: #EA1C81;
     --cor-topo: #D8F1FB;
@@ -116,24 +117,18 @@ main #beneficios #beneficios-servicos{
 /*                                             TEXT ALIGN: CENTER;                             */
 main #beneficios #beneficios-nossosbeneficios,
 main #beneficios #beneficios-servicos,
-main #form #form-texto,
-#registrar
-{
+main #form #form-texto{
     text-align: center;
 }
 
-main #form #form-formulario form,
-main #registro #cadastro-formulario form
-{
+main #form #form-formulario form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-main #form #form-formulario form input,
-main #registro #cadastro-formulario form input
-{
+main #form #form-formulario form input{
     display: block;
     padding: 8px;
     border: none;
@@ -144,8 +139,7 @@ main #registro #cadastro-formulario form input
     margin-bottom: 10px;
 }
 
-main #form-formulario-registro, form button
-main #form-formulario-possuo-cadastro, form button{
+main #form #form-formulario form button{
     padding: 8px;
     border: none;
     background-color: var(--cor-principal);
@@ -168,21 +162,9 @@ main #form #form-formulario{
 
 
 
-/*                                               RODAPÉ                               */
+/*                                               RODAPÉ                                         */
 #rodape{
     background-color: var(--cor-topo);
     text-align: center;
 }
 
-main #registro #cadastro-formulario form button{
-    margin: 8px;
-}
-
-main #registro, #cadastro-formulario{
-    margin-top: 20px;
-}
-
-main #registro #possuocadastro{
-    
-}
-main #registro #cadastro-formulario form button
