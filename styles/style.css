@@ -1,4 +1,3 @@
-
 :root{
     --cor-principal: #EA1C81;
     --cor-topo: #D8F1FB;
@@ -117,21 +116,18 @@ main #beneficios #beneficios-servicos{
 /*                                             TEXT ALIGN: CENTER;                             */
 main #beneficios #beneficios-nossosbeneficios,
 main #beneficios #beneficios-servicos,
-main #form #form-texto,
-#inscreva-se{
+main #form #form-texto{
     text-align: center;
 }
 
-main #form #form-formulario form,   
-main #login #logar-login form{
+main #form #form-formulario form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-main #form #form-formulario form input,
-main #login #logar-login form input{
+main #form #form-formulario form input{
     display: block;
     padding: 8px;
     border: none;
@@ -142,8 +138,7 @@ main #login #logar-login form input{
     margin-bottom: 10px;
 }
 
-main #form #form-formulario form button,
-main #login #logar-login form button{
+main #form #form-formulario form button{
     padding: 8px;
     border: none;
     background-color: var(--cor-principal);
@@ -161,22 +156,87 @@ main #form #form-formulario{
 
 
 
-/*                                               RODAPÉ                                         */
+/*                                               RODAPÉ                               */
 #rodape{
     background-color: var(--cor-topo);
     text-align: center;
 }
 
-main #login #logar-login form button{
-    margin: 8px;
+#cabecalho{
+    background: var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-main #login #logar-login form input{
-    margin: 5px;
+#cabecalho nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
 }
 
-main #login #logar-login form{
-    margin: 8px;
+#cabecalho nav a:hover{
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#main1 section div{
+    display: block;
+}
+
+.grid-3 {
+    border: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.registrar{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.width-100 {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 30px;
+    width: 100%;
+    display: block;
+}
+
+.ladoALado{
+    margin-top: 30px;
+}
+
+.ladoALado .btn-verde,
+.ladoALado .btn-vermelho{
+    text-decoration: none;
+    padding: 5px 45px;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.ladoALado .btn-verde{
+    background-color: #1CF365;
+}
+
+.ladoALado .btn-vermelho {
+    background-color: red;
+}
+
+.form-consulta label {
+    display: block;
+}
+
+.form-consulta input,
+.form-consulta textarea {
+    width: 95%;
 }
 
 main #login,logar-login{
@@ -242,3 +302,4 @@ main .secoes .secoes-consultascanceladas{
     padding: 60px;
     color: var(--cor-preta);
 }
+
