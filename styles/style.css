@@ -1,3 +1,4 @@
+
 :root{
     --cor-principal: #EA1C81;
     --cor-topo: #D8F1FB;
@@ -116,18 +117,21 @@ main #beneficios #beneficios-servicos{
 /*                                             TEXT ALIGN: CENTER;                             */
 main #beneficios #beneficios-nossosbeneficios,
 main #beneficios #beneficios-servicos,
-main #form #form-texto{
+main #form #form-texto,
+#inscreva-se{
     text-align: center;
 }
 
-main #form #form-formulario form{
+main #form #form-formulario form,   
+main #login #logar-login form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-main #form #form-formulario form input{
+main #form #form-formulario form input,
+main #login #logar-login form input{
     display: block;
     padding: 8px;
     border: none;
@@ -138,7 +142,8 @@ main #form #form-formulario form input{
     margin-bottom: 10px;
 }
 
-main #form #form-formulario form button{
+main #form #form-formulario form button,
+main #login #logar-login form button{
     padding: 8px;
     border: none;
     background-color: var(--cor-principal);
@@ -156,9 +161,25 @@ main #form #form-formulario{
 
 
 
-/*                                               RODAPÉ                               */
+/*                                               RODAPÉ                                         */
 #rodape{
     background-color: var(--cor-topo);
     text-align: center;
 }
 
+main #login #logar-login form button{
+    margin: 8px;
+}
+
+main #login #logar-login form input{
+    margin: 5px;
+}
+
+main #login #logar-login form{
+    margin: 8px;
+}
+
+main #login,logar-login{
+    margin-top: 120px;
+    
+}
