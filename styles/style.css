@@ -16,6 +16,238 @@
     box-sizing: border-box;
 }
 
+
+:root{
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF;
+}
+
+/*                                                  MARGE                                                        */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/*                                                 HEADER                                                       */
+
+#header{
+    background-color: var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+#header nav a:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 20px;
+}
+
+.marginLateral{
+    margin: 0px 20px;
+}
+
+main #banner{
+    background-image: url("../img/banner.png");
+    height: calc(100vh - 89px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* Cover é usado para preencher a tela inteira */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal);
+}
+
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 20px;
+}
+
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+
+main #banner h1{
+    color: var(--cor-principal);
+    font-size: 3em;
+}
+
+main #banner p{
+    color: black;
+}
+
+/*                                           CODIGO PARA O CURSOR                                         */
+main #banner button:hover{
+    cursor: pointer;
+}
+
+#header,
+main #banner button,
+#header nav a:hover,
+#bemVindo div,
+main #beneficios #beneficios-nossosbeneficios,
+#rodape,
+main #form #form-formulario form{
+    padding: 15px;
+}
+
+#bemVindo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#bemVindo #bemVindo-boasVindas h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+main #beneficios{
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-nossosbeneficios{
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+/*                                             TEXT ALIGN: CENTER;                             */
+main #beneficios #beneficios-nossosbeneficios,
+main #beneficios #beneficios-servicos,
+main #form #form-texto,
+#inscreva-se{
+    text-align: center;
+}
+
+main #form #form-formulario form,   
+main #login #logar-login form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #form #form-formulario form input,
+main #login #logar-login form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+main #form #form-formulario form button,
+main #login #logar-login form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+main #form #form-formulario{
+    background-image: url(../img/1-16373_dogs-png-jpg-royalty-free-library-dog-and\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+/*                                               RODAPÉ                                         */
+#rodape{
+    background-color: var(--cor-topo);
+    text-align: center;
+}
+
+main #login #logar-login form button{
+    margin: 8px;
+}
+
+main #login #logar-login form input{
+    margin: 5px;
+}
+
+main #login #logar-login form{
+    margin: 8px;
+}
+
+main #login,logar-login{
+    margin-top: 10px;
+    
+}
+
+main #registro h1 {
+    text-align: center;
+}
+
+
+main #form #form-formulario form,
+main #registro #cadastro-formulario form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #form #form-formulario form input,
+main #registro #cadastro-formulario form input
+{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+main .form-formulario-registro button,
+main .form-formulario-possuo-cadastro button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 30px;
+    width: 300px;
+    cursor: pointer;
+}
+
+main #registro #cadastro-formulario button{
+    margin: 8px;
+}
+
+main #registro, #cadastro-formulario{
+    margin-top: 20px;
+}
+
 /*                                                 HEADER                                                       */
 
 #header{
